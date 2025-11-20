@@ -1,31 +1,58 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nike Hypervenom – Fußballschuh</title>
+  <title>Fußball-Fan Webseite</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
+      line-height: 1.6;
+      background-color: #f4f4f4;
       color: #333;
     }
 
-    header {
-      background: #ff4500;
+    /* Navigation */
+    nav {
+      background-color: #009739; /* Brasilien Grün */
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
       color: white;
-      padding: 50px 20px;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    nav a:hover {
+      color: #ffdf00; /* Brasilien Gelb */
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(to right, #009739, #ffdf00);
+      color: white;
       text-align: center;
+      padding: 60px 20px;
     }
-
     header h1 {
-      margin: 0;
       font-size: 48px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 20px;
     }
 
+    /* Container */
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 40px auto;
       background: white;
       padding: 30px;
@@ -34,56 +61,135 @@
     }
 
     h2 {
-      color: #ff4500;
       text-align: center;
+      color: #009739;
       margin-bottom: 20px;
-    }
-
-    p {
-      line-height: 1.6;
     }
 
     img {
       display: block;
       max-width: 400px;
-      margin: 20px auto;
       border-radius: 12px;
+      margin: 20px auto;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .grid img {
+      width: 300px;
+      border-radius: 12px;
+    }
+
+    .shoe, .player {
+      margin-bottom: 40px;
     }
 
     footer {
       text-align: center;
-      background: #ff4500;
-      color: white;
       padding: 20px;
+      background-color: #009739;
+      color: white;
       margin-top: 40px;
+    }
+
+    ul {
+      margin-left: 20px;
     }
   </style>
 </head>
 <body>
 
+<!-- Navigation -->
+<nav>
+  <a href="#neymar">Neymar</a>
+  <a href="#ronaldo">Ronaldo</a>
+  <a href="#hypervenom">Nike Hypervenom</a>
+  <a href="#schuhe">Schuhvergleich</a>
+</nav>
+
+<!-- Header -->
 <header>
-  <h1>Nike Hypervenom</h1>
-  <p>Der ultimative Fußballschuh für Angreifer</p>
+  <h1>Fußball-Weltstars & Schuhe</h1>
+  <p>Alles über Neymar, Cristiano Ronaldo und die besten Fußballschuhe</p>
 </header>
 
-<div class="container">
-  <h2>Über den Hypervenom</h2>
-  <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/66d3f0f1-0c6c-4371-86b6-c0d0b073c74e/hypervenom-fußballschuh.png" 
-       alt="Nike Hypervenom Fußballschuh">
+<!-- Neymar -->
+<div class="container player" id="neymar">
+  <h2>Neymar Jr</h2>
+  <img src="https://hdqwalls.com/wallpapers/neymar-jr-brazil-portraits-f1.jpg" alt="Neymar Portrait">
   <p>
-    Der Nike Hypervenom ist speziell für Offensivspieler entwickelt worden, die Geschwindigkeit, Beweglichkeit 
-    und präzises Schießen auf dem Fußballplatz benötigen. Er bietet hervorragenden Halt, optimale Ballkontrolle 
-    und ein leichtes, flexibles Design, das schnelle Richtungswechsel erleichtert.
+    Neymar da Silva Santos Júnior, geboren am 5. Februar 1992 in Brasilien, ist einer der berühmtesten Fußballspieler der Welt.
+    Er begann seine Profikarriere bei Santos FC, bevor er zu Barcelona und später zu Paris Saint-Germain wechselte. Neymar ist bekannt
+    für seine unglaubliche Technik, Dribblings und spektakuläre Tore. Er gewann zahlreiche Titel, darunter die Champions League
+    mit Barcelona und die Olympischen Goldmedaillen mit Brasilien.
   </p>
+  <div class="grid">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Neymar_PSG.jpg" alt="Neymar PSG">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Neymar_in_Brazil_2018.jpg" alt="Neymar Brasilien">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Neymar_2018.jpg" alt="Neymar Portrait">
+  </div>
+</div>
+
+<!-- Cristiano Ronaldo -->
+<div class="container player" id="ronaldo">
+  <h2>Cristiano Ronaldo</h2>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo Portrait">
   <p>
-    Hypervenom-Schuhe sind bei Profispielern weltweit beliebt und werden oft auf Top-Level-Turnieren getragen. 
-    Mit einer Kombination aus Traktion, Komfort und explosiver Kraft ist der Hypervenom ideal für Spieler, 
-    die ihre Gegner mit Geschwindigkeit und Technik überwinden wollen.
+    Cristiano Ronaldo dos Santos Aveiro, geboren am 5. Februar 1985 in Portugal, ist einer der besten Fußballspieler aller Zeiten.
+    Er spielte für Sporting Lissabon, Manchester United, Real Madrid und Juventus Turin und ist bekannt für seine Schnelligkeit,
+    Kopfballstärke und Torgefahr. Ronaldo hat zahlreiche individuelle Auszeichnungen und Champions-League-Titel gewonnen.
+  </p>
+  <div class="grid">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Cristiano_Ronaldo_2016.jpg" alt="Ronaldo Aktion">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Cristiano_Ronaldo_2014.jpg" alt="Ronaldo Feier">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Cristiano_Ronaldo_2018.jpg" alt="Ronaldo Portrait">
+  </div>
+</div>
+
+<!-- Nike Hypervenom -->
+<div class="container shoe" id="hypervenom">
+  <h2>Nike Hypervenom</h2>
+  <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/66d3f0f1-0c6c-4371-86b6-c0d0b073c74e/hypervenom-fußballschuh.png" alt="Nike Hypervenom">
+  <p>
+    Der Nike Hypervenom ist ein Fußballschuh für Offensivspieler. Er bietet exzellente Ballkontrolle, optimale Traktion und
+    maximale Beweglichkeit. Viele Profis tragen den Hypervenom für seine Kombination aus Geschwindigkeit und Präzision.
+  </p>
+  <div class="grid">
+    <img src="https://images.nike.com/is/image/DotCom/NIKE_Football_Hypervenom.jpg" alt="Hypervenom seitlich">
+    <img src="https://images.nike.com/is/image/DotCom/NIKE_Football_Hypervenom_2.jpg" alt="Hypervenom Detail">
+  </div>
+</div>
+
+<!-- Schuhvergleich -->
+<div class="container shoe" id="schuhe">
+  <h2>Fußballschuh Vergleich: Nike Mercurial vs Adidas F50</h2>
+
+  <div class="grid">
+    <div>
+      <h3>Nike Mercurial</h3>
+      <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/66d3f0f1-0c6c-4371-86b6-c0d0b073c74e/hypervenom-fußballschuh.png" alt="Nike Mercurial">
+      <p>Maximale Beschleunigung, enges Tragegefühl, ideal für explosive Geschwindigkeit.</p>
+    </div>
+
+    <div>
+      <h3>Adidas F50</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Neymar_in_Brazil_2018.jpg" alt="Adidas F50 Beispielbild">
+      <p>Vielseitiger Schuh, bietet Speed, Stabilität und etwas mehr Platz im Vorfuß.</p>
+    </div>
+  </div>
+
+  <p style="text-align:center; font-weight:bold; margin-top:20px;">
+    Fazit: Beide sind Top-Speed-Schuhe – wähle je nach Spielstil: explosive Geschwindigkeit (Mercurial) oder stabiler Speed mit Komfort (F50).
   </p>
 </div>
 
+<!-- Footer -->
 <footer>
-  <p>© 2025 Nike Hypervenom Fan-Seite</p>
+  <p>© 2025 Fußball Fan-Webseite | Alles über Stars & Schuhe</p>
 </footer>
 
 </body>
