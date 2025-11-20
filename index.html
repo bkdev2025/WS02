@@ -3,66 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neymar Jr – Fan Seite</title>
+    <title>Neymar Jr – Brasilien Fan Seite</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f2f2f2;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
         }
-        header {
-            background: #0099ff;
+
+        /* Navigation */
+        nav {
+            background: #009739; /* Brasilien Grün */
             color: white;
-            padding: 20px;
+            padding: 15px;
             text-align: center;
         }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #ffdf00; /* Brasilien Gelb */
+        }
+
+        header {
+            background: linear-gradient(to right, #009739, #ffdf00);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 900px;
             margin: 20px auto;
             background: white;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.15);
         }
-        img {
-            width: 100%;
-            max-width: 400px;
-            display: block;
-            margin: auto;
-            border-radius: 10px;
-        }
+
         h2 {
             text-align: center;
+            color: #009739;
         }
-        p {
-            line-height: 1.6;
+
+        img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 10px;
+            display: block;
+            margin: 15px auto;
         }
     </style>
 </head>
 <body>
 
+<!-- Navigation -->
+<nav>
+    <a href="#">Start</a>
+    <a href="#">Bilder</a>
+    <a href="#">Profil</a>
+</nav>
+
 <header>
-    <h1>Neymar Jr – Fan Webseite</h1>
+    <h1>Neymar Jr – Brasilien Fan Webseite</h1>
 </header>
 
 <div class="container">
     <h2>Neymar Jr</h2>
 
-    <!-- Neymar Bild -->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Neymar_PSG.jpg" 
-         alt="Neymar bei PSG">
+    <!-- Hauptbild -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Neymar_PSG.jpg"
+         alt="Neymar">
 
     <p>
-        Neymar da Silva Santos Júnior, bekannt als Neymar, ist ein brasilianischer Fußballspieler 
-        und einer der talentiertesten Offensivspieler der Welt. Er wurde am 5. Februar 1992 
-        geboren und spielte u.a. bei Santos FC, dem FC Barcelona und Paris Saint-Germain.
+        Neymar da Silva Santos Júnior ist einer der größten Fußballer aus Brasilien.
+        Er ist bekannt für seine Dribblings, Kreativität und spektakulären Tore.
     </p>
+</div>
 
-    <p>
-        Neymar ist bekannt für seine Dribbling-Fähigkeiten, Technik und Kreativität und gehört 
-        seit Jahren zu den bekanntesten Persönlichkeiten im Weltfußball.
-    </p>
+<div class="container">
+    <h2>Mehr Bilder</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Neymar_in_Brazil_2018.jpg"
+         alt="Neymar im Brasilien-Trikot">
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Neymar_2018.jpg"
+         alt="Neymar Portrait">
+
 </div>
 
 </body>
