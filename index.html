@@ -1,198 +1,170 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neymar Jr – Brasilien Fan Seite</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-        }
-
-        /* Navigation */
-        nav {
-            background: #009739; /* Brasilien Grün */
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            color: #ffdf00; /* Brasilien Gelb */
-        }
-
-        header {
-            background: linear-gradient(to right, #009739, #ffdf00);
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 900px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.15);
-        }
-
-        h2 {
-            text-align: center;
-            color: #009739;
-        }
-
-        img {
-            width: 100%;
-            max-width: 350px;
-            border-radius: 10px;
-            display: block;
-            margin: 15px auto;
-        }
-    </style>
-</head>
-<body>
-
-<!-- Navigation -->
-<nav>
-    <a href="#">Start</a>
-    <a href="#">Bilder</a>
-    <a href="#">Profil</a>
-</nav>
-
-<header>
-    <h1>Neymar Jr – Brasilien Fan Webseite</h1>
-</header>
-
-<div class="container">
-    <h2>Neymar Jr</h2>
-
-    <!-- Hauptbild -->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Neymar_PSG.jpg"
-         alt="Neymar">
-
-    <p>
-        Neymar da Silva Santos Júnior ist einer der größten Fußballer aus Brasilien.
-        Er ist bekannt für seine Dribblings, Kreativität und spektakulären Tore.
-    </p>
-</div>
-
-<div class="container">
-    <h2>Mehr Bilder</h2>
-
-    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Neymar_in_Brazil_2018.jpg"
-         alt="Neymar im Brasilien-Trikot">
-
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Neymar_2018.jpg"
-         alt="Neymar Portrait">
-
-</div>
-
-</body>
-</html> 
-Gute Idee. Hier ist ein Beispiel‑HTML-Code, der dein verlinktes Bild einbindet:
-
-```html
-<!DOCTYPE html>
-<html lang="de">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neymar Bild-Seite</title>
+  <title>Neymar Jr – Fan Webseite</title>
   <style>
+    /* Grund-Styles */
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
       margin: 0;
-      padding: 0;
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #009739; /* Brasilien Grün */
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-      max-width: 500px;
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    nav a:hover {
+      color: #ffdf00; /* Brasilien Gelb */
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(to right, #009739, #ffdf00);
+      color: white;
       text-align: center;
+      padding: 60px 20px;
     }
-    img {
-      max-width: 100%;
-      border-radius: 8px;
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 20px;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    /* Section Titles */
+    h2 {
+      text-align: center;
+      color: #009739;
+      margin-bottom: 20px;
+    }
+
+    /* Images */
+    .img-center {
+      display: block;
+      margin: 20px auto;
+      max-width: 400px;
+      border-radius: 12px;
+    }
+
+    /* Grid for multiple images */
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .grid img {
+      width: 300px;
+      border-radius: 12px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #009739;
+      color: white;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-  <div class="card">
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">Über Neymar</a>
+    <a href="#career">Karriere</a>
+    <a href="#achievements">Erfolge</a>
+    <a href="#gallery">Galerie</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
     <h1>Neymar Jr</h1>
-    <img src="https://hdqwalls.com/wallpapers/neymar-jr-brazil-portraits-f1.jpg" 
-         alt="Neymar Portrait">
+    <p>Brasiliens Superstar und Fußball-Legende</p>
+  </header>
+
+  <!-- Über Neymar -->
+  <div class="container" id="about">
+    <h2>Über Neymar</h2>
+    <img class="img-center" src="https://hdqwalls.com/wallpapers/neymar-jr-brazil-portraits-f1.jpg" alt="Neymar Portrait">
     <p>
-      Hier ist ein Portraitbild von Neymar Jr., vom Hintergrund "Brazil Portraits".
+      Neymar da Silva Santos Júnior, besser bekannt als Neymar, wurde am 5. Februar 1992 in Mogi das Cruzes, Brasilien, geboren. 
+      Er ist bekannt für seine spektakulären Dribblings, seine Technik und seine unglaubliche Kreativität auf dem Spielfeld. 
+      Neymar gilt als einer der besten Offensivspieler der Welt und hat Millionen Fans weltweit.
     </p>
   </div>
 
-</body>
-</html>
-```
-
----
-
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neymar Bild-Seite</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-      max-width: 500px;
-      text-align: center;
-    }
-    img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="card">
-    <h1>Neymar Jr</h1>
-    <img src="https://hdqwalls.com/wallpapers/neymar-jr-brazil-portraits-f1.jpg" 
-         alt="Neymar Portrait">
+  <!-- Karriere -->
+  <div class="container" id="career">
+    <h2>Karriere</h2>
     <p>
-      Hier ist ein Portraitbild von Neymar Jr., vom Hintergrund "Brazil Portraits".
+      Neymar begann seine Profikarriere bei Santos FC, wo er schnell als großes Talent auffiel. 
+      2013 wechselte er zum FC Barcelona, wo er gemeinsam mit Messi und Suárez zahlreiche Titel gewann. 
+      2017 wechselte er zu Paris Saint-Germain (PSG), wo er weiterhin Rekorde bricht und spektakuläre Tore erzielt.
     </p>
+    <div class="grid">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Neymar_PSG.jpg" alt="Neymar PSG">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Neymar_in_Brazil_2018.jpg" alt="Neymar Brasilien">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Neymar_2018.jpg" alt="Neymar Portrait">
+    </div>
   </div>
+
+  <!-- Erfolge -->
+  <div class="container" id="achievements">
+    <h2>Erfolge</h2>
+    <ul>
+      <li>Gewinner der Copa Libertadores 2011 (Santos FC)</li>
+      <li>La Liga Meister 2015 und 2016 (FC Barcelona)</li>
+      <li>Champions-League Sieger 2015 (FC Barcelona)</li>
+      <li>Mehrfacher Torschützenkönig und Assist-König in Ligue 1 (PSG)</li>
+      <li>Olympisches Gold 2016 mit Brasilien</li>
+    </ul>
+  </div>
+
+  <!-- Galerie -->
+  <div class="container" id="gallery">
+    <h2>Galerie</h2>
+    <div class="grid">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Neymar_2017.jpg" alt="Neymar Aktion">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Neymar_2019.jpg" alt="Neymar feiert">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Neymar_2016.jpg" alt="Neymar Portrait">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Neymar Fan Webseite | Erstellt von Fan</p>
+  </footer>
 
 </body>
 </html>
